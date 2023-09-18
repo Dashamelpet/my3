@@ -1,0 +1,19 @@
+@mixin hoverAcccept()
+    transition: all .3s ease-out
+    border-bottom: 1px solid $textWhite
+    &:hover
+        border-bottom: 1px solid $textCyan
+        cursor: pointer
+@mixin hoverSvg()
+    transition: all .3s ease-out
+    &:hover
+        color: $textCyan
+        stroke: $textCyan
+        cursor: pointer
+@mixin hoverBtn()
+    transition: all .3s ease-out
+    &:hover
+        border: 2px solid $bgBtn
+        background-color: #fff
+        cursor: pointer
+        color: $textDark

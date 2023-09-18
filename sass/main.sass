@@ -1,3 +1,132 @@
-h1 
-    color: red
+@import sass/general/fonts
+@import sass/general/variables
+@import sass/general/reset
+@import sass/general/mixin
+@import sass/section/header
+@import sass/section/modal
+@import sass/section/banner
+@import sass/section/main-content
+@import sass/section/footer
+
+
+body
+    font: 400 18px $fontManrope
+    position: relative
+    color: $textDark
+    @media ( max-width: 1280px )
+        font-size: 16px
+    @media ( max-width: 768px )
+        font-size: 12px
+.container 
+    @media (min-width: 320px)
+    max-width: 1920px
+    padding-left: 15px
+    padding-right: 15px
+    margin: auto
+    @media ( min-width: 768px )
+        padding-left: 30px
+        padding-right: 30px
+    @media ( min-width: 1280px )
+        padding-left: 180px
+        padding-right: 180px
+    @media (min-width: 1688px) and (max-width: 1920px) 
+        padding-left: 360px
+        padding-right: 360px
+h1
+    font: 700 3.88rem $fontPlayfair
+    color: $textDark
+    @media ( max-width: 768px )
+        font-size: 3rem
+h2
+    font: 700 2.5rem $fontPlayfair
+    color: $textDark
+    text-align: center
+    @media ( max-width: 768px )
+        font-size: 2rem
+
+h3
+    font: 700 1.44rem $fontPlayfair
+    color: $textDark
+
+h4
+    font: 700 1.22rem $fontPlayfair
+    color: $textDark
+
+.ttu
     text-transform: uppercase
+
+.d-flex
+    display: flex 
+    flex-wrap: wrap
+.d-flex-nowrap
+    display: flex 
+    align-items: center
+
+.p-150
+    padding-top: 150px
+    padding-bottom: 150px
+    @media (max-width: 1280px)
+        padding-top: 100px
+        padding-bottom: 100px
+    @media (max-width: 768px)   
+        padding-top: 60px
+        padding-bottom: 60px 
+    @media (max-width: 480px)   
+        padding-top: 30px
+        padding-bottom: 30px 
+.mb-30
+    margin-bottom: 30px
+.mb-10
+    margin-bottom: 10px
+.pr-10
+    padding-right: 10px
+a
+    color: $textDark
+.button-dark
+    height: 50px
+    width: 200px
+    background-color: $bgBtn
+    color: $textWhite
+    column-gap: 12px
+    justify-content: center  
+    border: none
+    cursor: pointer
+    text-transform: uppercase
+    @include hoverBtn
+    svg
+        transition: all .3s ease-out
+        stroke: white
+    &:hover
+        svg
+            stroke: $textDark
+    @media ( max-width: 1688px )
+        width: 170px
+.button-white
+    height: 50px
+    width: 200px
+    column-gap: 12px
+    justify-content: center  
+    border: none
+    cursor: pointer
+    text-transform: uppercase
+    border: 2px solid $textCyan
+    transition: all .3s ease-out
+    background-color: #fff
+    color: $textDark
+    font-size: 0.77rem
+    display: flex
+    align-items: center
+    &:hover
+        color: $textWhite
+        background-color: $bgBtn
+.bg
+    background-color: $bgLight
+.mark
+    color: $textCyan
+    font-size: 0.833rem
+    font-weight: 600
+    padding-bottom: 7px
+    letter-spacing: 2.5px   
+    text-transform: uppercase 
+    text-align: center
+

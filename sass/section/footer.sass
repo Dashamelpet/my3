@@ -1,0 +1,89 @@
+.footer
+    background-color: $bgDark
+    &__content
+        &__top
+            justify-content: space-between
+            padding-bottom: 57px
+            border-bottom: 1px solid #fff
+            padding-top: 66px
+            @media ( max-width: 980px )
+                justify-content: start
+            &__logo
+                display: flex
+                column-gap: 17px
+                font: 700 2.22rem $fontPlayfair
+                color: $textWhite
+                @media ( max-width: 980px )
+                    width: 50%
+                @media ( max-width: 570px )
+                    width: 100%
+                    padding-bottom: 20px
+            &__social
+                display: flex
+                justify-content: space-between
+                column-gap: 10px
+                a
+                    width: 55px
+                    height: 55px
+                    border: 1px solid $bgBtn
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    color: $textWhite
+        &__bottom
+            display: flex
+            justify-content: space-between
+            padding-top: 52px
+            padding-bottom: 66px
+            flex-wrap: wrap
+            @media ( max-width: 980px )
+                padding-bottom: 0
+                row-gap: 20px
+            .footer__bottom__item
+                width: 25%
+                @media ( max-width: 980px )
+                    width: 35% 
+                @media ( max-width: 480px )
+                    width: 100%
+                &:nth-child(4)
+                    text-align: end
+                    @media ( max-width: 980px )
+                        text-align: left
+                &__title
+                    color: $textWhite
+                    padding-bottom: 21px
+                &__list
+                    .footer__list__item
+                        padding-bottom: 10px
+                        color: $textWhite
+                        font-size: 0.94rem
+                        a
+                            color: $textWhite
+                            font-size: 0.94rem
+                &:nth-child(3)
+                    .footer__list__item
+                        margin-bottom: 14px
+                        align-items: start
+                        display: flex
+                        position: relative
+                        p
+                            &:nth-child(2)
+                                position: absolute
+                                left: 90px
+                                width: 234px
+                                @media ( max-width: 980px )
+                                    left: 70px
+
+    &__copyright
+        background-color: black
+        text-align: center
+        padding: 20px 0
+        color: $textWhite
+        font-size: 0.83rem
+                            
+            
+
+
+
+                    
+        
